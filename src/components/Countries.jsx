@@ -5,10 +5,15 @@ import './Country.css';
 const Countries = () => {
     const[countriesData, setCountriesData] = useState([]);
     const getData = async() =>{
-        const res = await fetch('https://restcountries.com/v3.1/all');
-        const data = await res.json();
-        setCountriesData(data)
-        console.log(data)
+        try{
+            const res = await fetch('https://restcountries.com/v3.1/all');
+            const data = await res.json();
+            setCountriesData(data)
+            console.log(data)
+        }catch(err){
+            console.log(err)
+        }
+        
     }
     useEffect(()=>{
         getData()
