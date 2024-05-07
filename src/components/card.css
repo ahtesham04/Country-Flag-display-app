@@ -1,0 +1,19 @@
+.card{
+    height: 140px;
+    width: 140px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardImg{
+    height: 50%;
+    width: 50%;
+}
+
+h2{
+    /* font-size: ; */
+}
